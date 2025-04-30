@@ -31,7 +31,7 @@ Testing cpu-based horizontal pod autoscaling on OpenShift
 5. Look at the repository in another tab and click Create.
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/blob/main/images/step-5.png?raw=true" width="640" title="Hands on developer sandbox">
+  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/refs/heads/main/images/step-5.png" width="640" title="Hands on developer sandbox">
 </p>
 
 
@@ -56,7 +56,7 @@ Testing cpu-based horizontal pod autoscaling on OpenShift
 9. From the dotnet-sample deployment, click Actions / Add HorizontalPodAutoscaler.
 
 <p align="left">
-  <img src="https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/blob/main/images/step-9.png?raw=true" width="640" title="Hands on developer sandbox">
+  <img src="https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/blob/main/images/step-9.png" width="640" title="Hands on developer sandbox">
 </p>
 
 10. Set to 5% for CPU Utilization and click Save.
