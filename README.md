@@ -1,9 +1,18 @@
 # testing-cpu-based-hpa-ocp
+
+<p align="left">
+<img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
+<img src="https://img.shields.io/badge/openshift-%23121011.svg?style=for-the-badge&logo=openshift&logoColor=white" alt="OpenShift">
+<img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
+<img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
+<a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">     
+</p>
+
 Testing cpu-based horizontal pod autoscaling on OpenShift
 
 ## Prerequisites
 
-- Red Hat Account and Developer Sandbox.
+- Red Hat Account and [Developer Sandbox](https://developers.redhat.com/developer-sandbox).
 
 
 ## Hands on Developer Sandbox
@@ -71,9 +80,28 @@ Testing cpu-based horizontal pod autoscaling on OpenShift
   <img src="https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/blob/main/images/step-11.png?raw=true" width="640" title="Hands on developer sandbox">
 </p>
 
-12. From this terminal clone this repo.
+12. From this terminal 
+
+a. Clone this repo.
 
 ```bash
 git clone https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp.git
 ```
 
+b. Add chmod permission for test-hpa.sh script.
+
+```bash
+chmod 777 ./testing-cpu-based-hpa-ocp/test-hpa.sh
+```
+
+c. Run test-hpa.sh script.
+
+```bash
+./testing-cpu-based-hpa-ocp/test-hpa.sh
+```
+
+13. Look at the HPA in action.
+
+<p align="left">
+  <img src="https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/blob/main/images/step-12.png?raw=true" width="640" title="Hands on developer sandbox">
+</p>
