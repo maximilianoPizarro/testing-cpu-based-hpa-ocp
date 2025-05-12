@@ -25,22 +25,22 @@ From the Developer perspective, click on the **+Add** button.
 ### Step 3: Create an Application from a Code Sample
 Go to **Samples** and select "Create an application from a code sample."
 
-![Step 3](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-3.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-3.png" alt="Step 3" width="800">
 
 ### Step 4: Select .NET Builder Images Sample
 Choose the `.NET Builder Images Sample`.
 
-![Step 4](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-4.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-4.png" alt="Step 4" width="800">
 
 ### Step 5: Create the Application
 Review the repository and click **Create**.
 
-![Step 5](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-5.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-5.png" alt="Step 5" width="800">
 
 ### Step 6: Check the Topology Section
 Wait for the pod to be ready in the **Topology** section.
 
-![Step 6](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-6.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-6.png" alt="Step 6" width="800">
 
 ---
 
@@ -49,12 +49,12 @@ Wait for the pod to be ready in the **Topology** section.
 ### Step 7: Edit Resource Limits
 From the `dotnet-sample` deployment, click **Actions > Edit resource limits**.
 
-![Step 7](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-7.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-7.png" alt="Step 7" width="800">
 
 ### Step 8: Configure Resource Limits
 Set the resource limits and requests, then click **Save**.
 
-![Step 8](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-8.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-8.png" alt="Step 8" width="800">
 
 ### Step 9: Add Horizontal Pod Autoscaler
 From the `dotnet-sample` deployment, click **Actions > Add HorizontalPodAutoscaler**.
@@ -64,7 +64,7 @@ From the `dotnet-sample` deployment, click **Actions > Add HorizontalPodAutoscal
 ### Step 10: Set CPU Utilization
 Set the CPU Utilization to **5%** and click **Save**.
 
-![Step 10](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-10.png)
+<img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-10.png" alt="Step 10" width="800">
 
 ---
 
