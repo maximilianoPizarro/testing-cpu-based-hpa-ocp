@@ -1,109 +1,103 @@
-# testing-cpu-based-hpa-ocp
+# Testing CPU-Based Horizontal Pod Autoscaling on OpenShift
 
-<p align="left">
-<img src="https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white" alt="Redhat">
-<img src="https://img.shields.io/badge/openshift-%23121011.svg?style=for-the-badge&logo=openshift&logoColor=white" alt="OpenShift">
-<img src="https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white" alt="kubernetes">
-<img src="https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white" alt="shell">
-<a href="https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin">     
-</p>
-
-Testing cpu-based horizontal pod autoscaling on OpenShift
+![Redhat](https://img.shields.io/badge/redhat-CC0000?style=for-the-badge&logo=redhat&logoColor=white)
+![OpenShift](https://img.shields.io/badge/openshift-%23121011.svg?style=for-the-badge&logo=openshift&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Shell](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maximiliano-gregorio-pizarro-consultor-it)
 
 ## Prerequisites
 
 - Red Hat Account and [Developer Sandbox](https://developers.redhat.com/developer-sandbox).
 
+---
 
-## Hands on Developer Sandbox
+## Hands-on Developer Sandbox
 
-1. Log in with DevSandbox method access, using your Red Hat Account.
+### Step 1: Log in to Developer Sandbox
+Log in with your Red Hat Account.
 
-2. From Developer perspective click on +Add button.
+### Step 2: Add a New Application
+From the Developer perspective, click on the **+Add** button.
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-2.png" width="640" title="Hands on developer sandbox">
-</p>  
+![Step 2](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-2.png)
 
-3. Go to Samples, "Create an application from a code sample".
+### Step 3: Create an Application from a Code Sample
+Go to **Samples** and select "Create an application from a code sample."
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-3.png" width="640" title="Hands on developer sandbox">
-</p>
+![Step 3](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-3.png)
 
-4. Select .NET Builder Images Sample.
+### Step 4: Select .NET Builder Images Sample
+Choose the `.NET Builder Images Sample`.
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-4.png" width="640" title="Hands on developer sandbox">
-</p>
+![Step 4](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-4.png)
 
-5. Look at the repository in another tab and click Create.
+### Step 5: Create the Application
+Review the repository and click **Create**.
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-5.png" width="640" title="Hands on developer sandbox">
-</p>
+![Step 5](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-5.png)
 
+### Step 6: Check the Topology Section
+Wait for the pod to be ready in the **Topology** section.
 
-6. Check the Topology section and wait for the pod to be ready.
+![Step 6](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-6.png)
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-6.png" width="640" title="Hands on developer sandbox">
-</p>
+---
 
-7. From the dotnet-sample deployment, click Actions / Edit resource limits.
+## Configure Resource Limits and HPA
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-7.png" width="640" title="Hands on developer sandbox">
-</p>
+### Step 7: Edit Resource Limits
+From the `dotnet-sample` deployment, click **Actions > Edit resource limits**.
 
-8. Configure resource limits and requests and click Save.
+![Step 7](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-7.png)
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-8.png" width="640" title="Hands on developer sandbox">
-</p>
+### Step 8: Configure Resource Limits
+Set the resource limits and requests, then click **Save**.
 
-9. From the dotnet-sample deployment, click Actions / Add HorizontalPodAutoscaler.
+![Step 8](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-8.png)
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-9.png" width="640" title="Hands on developer sandbox">
-</p>
+### Step 9: Add Horizontal Pod Autoscaler
+From the `dotnet-sample` deployment, click **Actions > Add HorizontalPodAutoscaler**.
 
-10. Set to 5% for CPU Utilization and click Save.
+![Step 9](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-9.png)
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-10.png" width="640" title="Hands on developer sandbox">
-</p>
+### Step 10: Set CPU Utilization
+Set the CPU Utilization to **5%** and click **Save**.
 
-11. Open OpenShift commmand line terminal, initialize terminal with your proyect, click Start.
+![Step 10](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-10.png)
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-11.png" width="640" title="Hands on developer sandbox">
-</p>
+---
 
-12. From this terminal 
+## Test the HPA
 
-a. Clone this repo.
+### Step 11: Open OpenShift Terminal
+Initialize the terminal with your project and click **Start**.
 
+![Step 11](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-11.png)
+
+### Step 12: Run the Test Script
+
+#### a. Clone the Repository
 ```bash
 git clone https://github.com/maximilianoPizarro/testing-cpu-based-hpa-ocp.git
 ```
 
-b. Add chmod permission for test-hpa.sh script.
+#### b. Add chmod permission for test-hpa.sh script.
 
 ```bash
 chmod 777 ./testing-cpu-based-hpa-ocp/test-hpa.sh
 ```
 
-c. Run test-hpa.sh script.
+#### c. Run test-hpa.sh script.
 
 ```bash
 ./testing-cpu-based-hpa-ocp/test-hpa.sh
 ```
 
-13. Look at the HPA in action.
+### Step 13: Look at the HPA in action.
 
-<p align="left">
-  <img src="https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-12.png" width="640" title="Hands on developer sandbox">
-</p>
+![Step 11](https://raw.githubusercontent.com/maximilianoPizarro/testing-cpu-based-hpa-ocp/main/images/step-12.png)
 
-Build Here, Go Anywhere
+---
+
+# Build Here, Go Anywhere
